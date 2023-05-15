@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Pagination</h1>
+    <p id="description">This task deals with pagination task</p>
+    <div id="buttons" class="d-flex">
+        <button class="print-one" onclick="parameterPrint(0)">first</button>
+        <button class="print-five" onclick="parameterPrint(9)">last</button>
+        <button class="prev-backward" onclick="previous()">previous</button>
+        <button class="next-forward" onclick="forward()">next</button>
+        <button class="print-two" onclick="parameterPrint(1)">2</button>
+        <button class="print-three" onclick="parameterPrint(2)">3</button>
+        <button class="print-four" onclick="parameterPrint(3)">4</button>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered" id="table-css">
+            <thead class="table-head">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="display-id"></td>
+                    <td class="display-name"></td>
+                    <td class="display-email"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
